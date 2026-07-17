@@ -1,0 +1,455 @@
+{
+  "clients": [
+    {
+      "id": "client-1",
+      "name": "Acme Corporation",
+      "contactPerson": "Johnathan Doe",
+      "email": "j.doe@acme.com",
+      "phone": "+1 (555) 123-4567",
+      "address": "123 Industrial Parkway, Suite A, Tech City, CA",
+      "status": "active",
+      "createdAt": "2026-06-01T10:00:00Z"
+    },
+    {
+      "id": "client-2",
+      "name": "Fintech Global Inc",
+      "contactPerson": "Sarah Jenkins",
+      "email": "s.jenkins@fintechglobal.com",
+      "phone": "+1 (555) 987-6543",
+      "address": "742 Financial Boulevard, Floor 18, New York, NY",
+      "status": "active",
+      "createdAt": "2026-06-10T11:00:00Z"
+    },
+    {
+      "id": "client-3",
+      "name": "HealthFlow Systems",
+      "contactPerson": "Dr. Robert Chen",
+      "email": "r.chen@healthflow.io",
+      "phone": "+1 (555) 456-7890",
+      "address": "500 Biotech Way, San Francisco, CA",
+      "status": "active",
+      "createdAt": "2026-06-20T09:30:00Z"
+    },
+    {
+      "id": "client-4",
+      "name": "Apex Retail Group",
+      "contactPerson": "Amanda Ross",
+      "email": "a.ross@apexretail.com",
+      "phone": "+1 (555) 321-7654",
+      "address": "100 Shopping Center Plaza, Dallas, TX",
+      "status": "inactive",
+      "createdAt": "2026-05-15T14:20:00Z"
+    }
+  ],
+  "projects": [
+    {
+      "id": "project-1",
+      "clientId": "client-2",
+      "name": "Enterprise Core Migration",
+      "description": "Upgrading the transactional core database, implementing microservices, and migrating legacy tables to PostgreSQL.",
+      "startDate": "2026-06-15",
+      "endDate": "2026-09-15",
+      "budget": 85000,
+      "status": "active",
+      "progress": 65,
+      "createdAt": "2026-06-12T10:00:00Z"
+    },
+    {
+      "id": "project-2",
+      "clientId": "client-3",
+      "name": "Telehealth Patient Portal",
+      "description": "A mobile-responsive clinical portal for patient check-ins, medical records retrieval, and video consultation scheduling.",
+      "startDate": "2026-07-01",
+      "endDate": "2026-10-01",
+      "budget": 45000,
+      "status": "active",
+      "progress": 40,
+      "createdAt": "2026-06-25T11:00:00Z"
+    },
+    {
+      "id": "project-3",
+      "clientId": "client-4",
+      "name": "E-Commerce Replatforming",
+      "description": "Migrating legacy Shopify store to an enterprise headless Next.js web application with a high-performance custom checkout funnel.",
+      "startDate": "2026-05-20",
+      "endDate": "2026-07-10",
+      "budget": 60000,
+      "status": "completed",
+      "progress": 100,
+      "createdAt": "2026-05-18T08:00:00Z"
+    },
+    {
+      "id": "project-4",
+      "clientId": "client-1",
+      "name": "NextGen AI Analytics Dashboard",
+      "description": "Building custom predictive models, connecting to internal APIs, and creating a beautiful interactive visual dashboard representing supply chain insights.",
+      "startDate": "2026-08-01",
+      "endDate": "2026-12-01",
+      "budget": 120000,
+      "status": "planning",
+      "progress": 15,
+      "createdAt": "2026-07-01T09:00:00Z"
+    }
+  ],
+  "developers": [
+    {
+      "id": "dev-1",
+      "name": "Aravind Nair",
+      "email": "aravind@bnintelhub.com",
+      "role": "Technical Lead",
+      "skills": [
+        "React",
+        "Node.js",
+        "PostgreSQL",
+        "AWS",
+        "Docker"
+      ],
+      "hourlyRate": 75,
+      "status": "busy",
+      "createdAt": "2026-05-01T08:00:00Z"
+    },
+    {
+      "id": "dev-2",
+      "name": "Sneha Iyer",
+      "email": "sneha@bnintelhub.com",
+      "role": "Senior Frontend Developer",
+      "skills": [
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "UI/UX",
+        "Figma"
+      ],
+      "hourlyRate": 60,
+      "status": "busy",
+      "createdAt": "2026-05-10T08:00:00Z"
+    },
+    {
+      "id": "dev-3",
+      "name": "Vikram Malhotra",
+      "email": "vikram@bnintelhub.com",
+      "role": "Backend Architect",
+      "skills": [
+        "Node.js",
+        "Python",
+        "Go",
+        "Express",
+        "Redis",
+        "PostgreSQL"
+      ],
+      "hourlyRate": 70,
+      "status": "available",
+      "createdAt": "2026-05-15T08:00:00Z"
+    },
+    {
+      "id": "dev-4",
+      "name": "Divya Sharma",
+      "email": "divya@bnintelhub.com",
+      "role": "QA Automation Engineer",
+      "skills": [
+        "Cypress",
+        "Selenium",
+        "Jest",
+        "CI/CD",
+        "API Testing"
+      ],
+      "hourlyRate": 50,
+      "status": "available",
+      "createdAt": "2026-06-01T08:00:00Z"
+    }
+  ],
+  "project_developers": [
+    {
+      "id": "pd-1",
+      "projectId": "project-1",
+      "developerId": "dev-1"
+    },
+    {
+      "id": "pd-2",
+      "projectId": "project-1",
+      "developerId": "dev-3"
+    },
+    {
+      "id": "pd-3",
+      "projectId": "project-2",
+      "developerId": "dev-2"
+    },
+    {
+      "id": "pd-4",
+      "projectId": "project-2",
+      "developerId": "dev-4"
+    },
+    {
+      "id": "pd-5",
+      "projectId": "project-3",
+      "developerId": "dev-2"
+    },
+    {
+      "id": "pd-6",
+      "projectId": "project-3",
+      "developerId": "dev-1"
+    }
+  ],
+  "quotations": [
+    {
+      "id": "quote-1",
+      "clientId": "client-3",
+      "quotationNumber": "QT-2026-001",
+      "date": "2026-06-10",
+      "expiryDate": "2026-07-10",
+      "items": [
+        {
+          "id": "qi-1",
+          "description": "Patient Portal Design & Prototyping",
+          "qty": 1,
+          "rate": 8000,
+          "amount": 8000
+        },
+        {
+          "id": "qi-2",
+          "description": "Video Telehealth WebRTC Core Setup",
+          "qty": 1,
+          "rate": 17000,
+          "amount": 17000
+        },
+        {
+          "id": "qi-3",
+          "description": "HIPAA Compliant API & Database Integration",
+          "qty": 1,
+          "rate": 20000,
+          "amount": 20000
+        }
+      ],
+      "subtotal": 45000,
+      "taxRate": 18,
+      "taxAmount": 8100,
+      "discount": 0,
+      "total": 53100,
+      "status": "accepted",
+      "notes": "This estimate is fully inclusive of video server hosting configurations for the first 3 months.",
+      "createdAt": "2026-06-10T09:00:00Z"
+    },
+    {
+      "id": "quote-2",
+      "clientId": "client-1",
+      "quotationNumber": "QT-2026-002",
+      "date": "2026-07-01",
+      "expiryDate": "2026-08-01",
+      "items": [
+        {
+          "id": "qi-4",
+          "description": "AI Predictor Core Python Model Service",
+          "qty": 1,
+          "rate": 50000,
+          "amount": 50000
+        },
+        {
+          "id": "qi-5",
+          "description": "Dynamic React Dashboard & Filter Engine",
+          "qty": 1,
+          "rate": 45000,
+          "amount": 45000
+        },
+        {
+          "id": "qi-6",
+          "description": "Enterprise Security Audit & IAM Roles",
+          "qty": 1,
+          "rate": 25000,
+          "amount": 25000
+        }
+      ],
+      "subtotal": 120000,
+      "taxRate": 18,
+      "taxAmount": 21600,
+      "discount": 5000,
+      "total": 136600,
+      "status": "sent",
+      "notes": "Standard 5% discount applied for Enterprise licensing setup.",
+      "createdAt": "2026-07-01T08:30:00Z"
+    },
+    {
+      "id": "quote-3",
+      "clientId": "client-2",
+      "quotationNumber": "QT-2026-003",
+      "date": "2026-07-15",
+      "expiryDate": "2026-08-15",
+      "items": [
+        {
+          "id": "qi-7",
+          "description": "DevOps & CI/CD Pipeline Modernization",
+          "qty": 1,
+          "rate": 35000,
+          "amount": 35000
+        }
+      ],
+      "subtotal": 35000,
+      "taxRate": 18,
+      "taxAmount": 6300,
+      "discount": 0,
+      "total": 41300,
+      "status": "draft",
+      "notes": "Initial proposal draft for ongoing tech enhancements.",
+      "createdAt": "2026-07-15T10:00:00Z"
+    }
+  ],
+  "invoices": [
+    {
+      "id": "invoice-1",
+      "clientId": "client-2",
+      "projectId": "project-1",
+      "invoiceNumber": "INV-2026-001",
+      "issueDate": "2026-06-15",
+      "dueDate": "2026-07-15",
+      "items": [
+        {
+          "id": "ii-1",
+          "description": "Enterprise Core Migration - Milestone 1 Implementation",
+          "qty": 1,
+          "rate": 25000,
+          "amount": 25000
+        }
+      ],
+      "subtotal": 25000,
+      "taxRate": 18,
+      "taxAmount": 4500,
+      "discount": 0,
+      "total": 29500,
+      "status": "paid",
+      "notes": "Milestone 1 completed, verified, and signed off.",
+      "createdAt": "2026-06-15T09:00:00Z"
+    },
+    {
+      "id": "invoice-2",
+      "clientId": "client-3",
+      "projectId": "project-2",
+      "invoiceNumber": "INV-2026-002",
+      "issueDate": "2026-07-05",
+      "dueDate": "2026-08-05",
+      "items": [
+        {
+          "id": "ii-2",
+          "description": "Telehealth Patient Portal - Visual Prototyping & UX Wireframes",
+          "qty": 1,
+          "rate": 15000,
+          "amount": 15000
+        }
+      ],
+      "subtotal": 15000,
+      "taxRate": 18,
+      "taxAmount": 2700,
+      "discount": 0,
+      "total": 17700,
+      "status": "sent",
+      "notes": "Awaiting client approval of design mockups.",
+      "createdAt": "2026-07-05T09:30:00Z"
+    },
+    {
+      "id": "invoice-3",
+      "clientId": "client-2",
+      "projectId": "project-1",
+      "invoiceNumber": "INV-2026-003",
+      "issueDate": "2026-07-10",
+      "dueDate": "2026-08-10",
+      "items": [
+        {
+          "id": "ii-3",
+          "description": "Enterprise Core Migration - Milestone 2 Architecture & Setup",
+          "qty": 1,
+          "rate": 30000,
+          "amount": 30000
+        }
+      ],
+      "subtotal": 30000,
+      "taxRate": 18,
+      "taxAmount": 5400,
+      "discount": 0,
+      "total": 35400,
+      "status": "paid",
+      "notes": "Second phase migration deliverables delivered.",
+      "createdAt": "2026-07-10T10:00:00Z"
+    },
+    {
+      "id": "invoice-4",
+      "clientId": "client-4",
+      "projectId": "project-3",
+      "invoiceNumber": "INV-2026-004",
+      "issueDate": "2026-05-20",
+      "dueDate": "2026-06-20",
+      "items": [
+        {
+          "id": "ii-4",
+          "description": "E-Commerce Replatforming - Completion Settlement Balance",
+          "qty": 1,
+          "rate": 12500,
+          "amount": 12500
+        }
+      ],
+      "subtotal": 12500,
+      "taxRate": 18,
+      "taxAmount": 2250,
+      "discount": 0,
+      "total": 14750,
+      "status": "overdue",
+      "notes": "Final project completion payment overdue.",
+      "createdAt": "2026-05-20T11:00:00Z"
+    }
+  ],
+  "payments": [
+    {
+      "id": "payment-1",
+      "invoiceId": "invoice-1",
+      "amount": 29500,
+      "date": "2026-06-20",
+      "paymentMethod": "bank_transfer",
+      "referenceId": "TXN-908124098",
+      "notes": "Automated bank wire settlement. Confirmed.",
+      "createdAt": "2026-06-20T15:00:00Z"
+    },
+    {
+      "id": "payment-2",
+      "invoiceId": "invoice-3",
+      "amount": 35400,
+      "date": "2026-07-12",
+      "paymentMethod": "bank_transfer",
+      "referenceId": "TXN-998231011",
+      "notes": "Milestone 2 settlement payment.",
+      "createdAt": "2026-07-12T16:00:00Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notify-1",
+      "title": "Invoice Overdue",
+      "message": "Invoice INV-2026-004 for Apex Retail Group is overdue by 26 days.",
+      "type": "warning",
+      "read": false,
+      "createdAt": "2026-07-16T12:00:00Z"
+    },
+    {
+      "id": "notify-2",
+      "title": "Quotation Accepted",
+      "message": "Client HealthFlow Systems has accepted Quotation QT-2026-001.",
+      "type": "success",
+      "read": false,
+      "createdAt": "2026-06-10T09:05:00Z"
+    },
+    {
+      "id": "notify-3",
+      "title": "Project Kickoff",
+      "message": "New project \"NextGen AI Analytics Dashboard\" has been created for Acme Corporation.",
+      "type": "info",
+      "read": true,
+      "createdAt": "2026-07-01T09:10:00Z"
+    }
+  ],
+  "settings": {
+    "companyName": "BN IntelHub Pvt Ltd",
+    "companyAddress": "404 Tech Park, Tower B, Sector 62, Noida, India",
+    "companyEmail": "finance@bnintelhub.com",
+    "companyPhone": "+91 (120) 456-7890",
+    "currency": "USD",
+    "taxRate": 18,
+    "supabaseUrl": "",
+    "supabaseAnonKey": ""
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "BN IntelHub ERP",
+  "description": "Enterprise-ready Resource Planning system with relational tracking, financial reporting, dynamic invoicing, and quotation conversions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
