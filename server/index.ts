@@ -53,4 +53,10 @@ async function startServer() {
   });
 }
 
-startServer();
+// Start server if not running on Vercel (local dev or traditional deployment)
+if (!process.env.VERCEL) {
+  startServer();
+}
+
+// Export the Express API for Vercel Serverless Functions
+export default app;
