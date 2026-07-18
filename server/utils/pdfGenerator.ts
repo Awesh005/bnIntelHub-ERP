@@ -465,10 +465,7 @@ export function generateInvoicePdf(
   }
   
   if (!stampDrawn && company.enable_stamp !== false) {
-    doc.circle(stampX + 25, sigY + 25, 26).stroke(COLOR_ACCENT);
-    doc.circle(stampX + 25, sigY + 25, 24).stroke(COLOR_ACCENT); 
-    doc.font(FONT_BOLD).fontSize(7).fillColor(COLOR_ACCENT).text('COMPANY', stampX + 5, sigY + 18, { width: 40, align: 'center' });
-    doc.text('SEAL', stampX + 5, sigY + 28, { width: 40, align: 'center' });
+    // Left intentionally blank for manual stamping
   }
 
   // Digital Signature
@@ -480,7 +477,7 @@ export function generateInvoicePdf(
   }
   
   if (!sigDrawn && company.enable_signature !== false) {
-    doc.font(FONT_ITALIC).fontSize(18).fillColor(COLOR_PRIMARY).text('Authorized', PAGE_WIDTH - MARGIN - 140, sigY + 12, { align: 'right', width: 140 });
+    // Left intentionally blank for manual signature
   }
   
   doc.moveTo(PAGE_WIDTH - MARGIN - 140, sigY + 45).lineTo(PAGE_WIDTH - MARGIN, sigY + 45).stroke(COLOR_BORDER);
