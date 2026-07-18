@@ -1,6 +1,6 @@
 import { Router } from 'express';
-import { supabase } from '../supabaseAdmin';
-import { generateInvoicePdf } from '../utils/pdfGenerator';
+import { supabase } from '../supabaseAdmin.js';
+import { generateInvoicePdf } from '../utils/pdfGenerator.js';
 
 const router = Router();
 

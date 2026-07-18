@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import PDFDocument from 'pdfkit';
-import { supabase } from '../supabaseAdmin';
+import { supabase } from '../supabaseAdmin.js';
 
 const router = Router();
 
