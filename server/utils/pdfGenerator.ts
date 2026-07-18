@@ -222,11 +222,10 @@ export function generateInvoicePdf(
   const colXs = { 
     sr: MARGIN, 
     desc: MARGIN + 25, 
-    sac: MARGIN + 250, 
-    qty: MARGIN + 310, 
-    unit: MARGIN + 360, 
-    rate: MARGIN + 410, 
-    total: MARGIN + 470 
+    sac: MARGIN + 300, 
+    qty: MARGIN + 360, 
+    unit: MARGIN + 410, 
+    rate: MARGIN + 460
   };
 
   function drawTableHeader() {
@@ -240,8 +239,7 @@ export function generateInvoicePdf(
     doc.text('SAC/HSN', colXs.sac, textY, { width: 50, align: 'center' });
     doc.text('Qty', colXs.qty, textY, { width: 40, align: 'center' });
     doc.text('Unit', colXs.unit, textY, { width: 40, align: 'center' });
-    doc.text('Rate', colXs.rate, textY, { width: 50, align: 'right' });
-    doc.text(`Total (${company.currency || 'INR'})`, colXs.total, textY, { width: CONTENT_WIDTH - (colXs.total - MARGIN) - 5, align: 'right' });
+    doc.text('Rate', colXs.rate, textY, { width: CONTENT_WIDTH - (colXs.rate - MARGIN) - 5, align: 'right' });
     
     // Fix gap issue by setting doc.y exactly to the bottom of the table header
     doc.y = startY + 32;
@@ -302,8 +300,7 @@ export function generateInvoicePdf(
     doc.text(company.default_sac || '-', colXs.sac, textY, { width: 50, align: 'center' });
     doc.text(qty.toString(), colXs.qty, textY, { width: 40, align: 'center' });
     doc.text('NOS', colXs.unit, textY, { width: 40, align: 'center' });
-    doc.text(rate.toLocaleString('en-US', { minimumFractionDigits: 2 }), colXs.rate, textY, { width: 50, align: 'right' });
-    doc.font(FONT_BOLD).text(itemTotal.toLocaleString('en-US', { minimumFractionDigits: 2 }), colXs.total, textY, { width: CONTENT_WIDTH - (colXs.total - MARGIN) - 5, align: 'right' });
+    doc.text(rate.toLocaleString('en-US', { minimumFractionDigits: 2 }), colXs.rate, textY, { width: CONTENT_WIDTH - (colXs.rate - MARGIN) - 5, align: 'right' });
     
     doc.y = startY + rowHeight;
   });
